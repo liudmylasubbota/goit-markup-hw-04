@@ -30,15 +30,15 @@
         </nav>
             <ul class="contact-list">
                 <li class="contact-list-item">
-                    <a class="contact-header-mail" href="mailto:info@devstudio.com">
-                   <svg class="mail-icon" width="16" height="12">
+                    <a class="contact-header-mail icons" href="mailto:info@devstudio.com">
+                   <svg class="contact-icon" width="16" height="12">
                        <use href="./images/sprite.svg#icon-envelope"></use>
                    </svg> 
                     info@devstudio.com</a>
                 </li>
                 <li class="contact-list-item">
-                    <a class="contact-header-tel" href="tel:+380961111111">
-                    <svg class="phone-icon" width="16" height="12">
+                    <a class="contact-header-tel icons" href="tel:+380961111111">
+                    <svg class="contact-icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                     </svg> 
                     +38 096 111 11 11</a>
@@ -70,7 +70,7 @@
     
         <ul class="portfolio-list">
         <li class="portfolio-list-item">
-           <a href=""> <img src="./images/project1.png" alt="страница сайта">
+           <a class="portfolio-list-link" href=""> <img src="./images/project1.png" alt="страница сайта">
             <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Технокряк</h2>
             <p class="portfolio-description">Веб-сайт</p>
@@ -78,7 +78,7 @@
         </a>
             </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project2.png" alt="постер с баскетболистами">
+            <a class="portfolio-list-link" href=""><img src="./images/project2.png" alt="постер с баскетболистами">
         <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
             <p class="portfolio-description">Дизайн</p> 
@@ -86,7 +86,7 @@
         </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project3.png" alt="логотип ресторана">
+            <a class="portfolio-list-link" href=""><img src="./images/project3.png" alt="логотип ресторана">
         <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Ресторан Seafood</h2>
             <p class="portfolio-description">Приложение</p>
@@ -94,7 +94,7 @@
         </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project4.png" alt="наушники">
+            <a class="portfolio-list-link" href=""><img src="./images/project4.png" alt="наушники">
         <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Проект Prime</h2>
             <p class="portfolio-description">Маркетинг</p>
@@ -102,7 +102,7 @@
         </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project5.png" alt="коробки">
+            <a class="portfolio-list-link" href=""><img src="./images/project5.png" alt="коробки">
                 <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Проект Boxes</h2>
             <p class="portfolio-description">Приложение</p>
@@ -110,7 +110,7 @@
         </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project6.png" alt="монитор">
+            <a class="portfolio-list-link" href=""><img src="./images/project6.png" alt="монитор">
             <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Inspiration has no Borders</h2>
             <p class="portfolio-description">Веб-сайт</p>
@@ -118,7 +118,7 @@
         </a>
         </li>  
         <li class="portfolio-list-item">
-                <a href=""><img src="./images/project7.png" alt="журнал">
+                <a class="portfolio-list-link" href=""><img src="./images/project7.png" alt="журнал">
             <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Издание Limited Edition</h2>
             <p class="portfolio-description">Дизайн</p>
@@ -126,7 +126,7 @@
     </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project8.png" alt="лейбл">
+            <a class="portfolio-list-link" href=""><img src="./images/project8.png" alt="лейбл">
         <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Проект LAB</h2>
             <p class="portfolio-description">Маркетинг</p>
@@ -134,7 +134,7 @@
         </a>
         </li>
         <li class="portfolio-list-item">
-            <a href=""><img src="./images/project9.png" alt="ноутбук"> 
+            <a class="portfolio-list-link" href=""><img src="./images/project9.png" alt="ноутбук"> 
                 <div class="portfolio-list-wrapper">
             <h2 class="portfolio-title">Growing Business</h2>
             <p class="portfolio-description">Приложение</p>
@@ -146,6 +146,7 @@
     </section>
     <footer class="footer">
         <div class="container">
+            <div class="adress-data">
         <a class="logo" href="index.html" aria-label="логотип сайта"><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
             <address class="contact">
             <ul class="footer-list">
@@ -155,10 +156,45 @@
                 <li class="footer-list-item">
                     <a class="contact-footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
-                <li cla      <a class="contact-footer-mail" href="mailto:info@example.com">info@example.com</a>
+                <li class="footer-list-it">
+                    <a class="contact-footer-mail" href="mailto:info@example.com">info@example.com</a>
                 </li>
             </ul>
         </address>
+    </div>
+        <div class="social_links">
+            <h2 class="social-links-title">Присоединяйтесь</h2>
+            <ul class="social__list">
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                        <svg class="social-list__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href=""  class="social-list__link">
+                        <svg class="social-list__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     </footer>
 </body>

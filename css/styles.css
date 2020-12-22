@@ -110,7 +110,10 @@ color: #000000;
 .contact-list {
   display: flex;
 }
-
+.contact-header-mail:focus .contact-icon,
+.contact-header-mail:hover .contact-icon {
+  fill: var(--accent-color);
+}
 .header .logo {
   margin-right: 93px;
 }
@@ -420,20 +423,34 @@ color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
   margin-bottom: 9px;
 }
-
+.social-list__icon{
+  fill: #FFFFFF;
+}
+.social-list__link:focus,
+.social-list__link:hover{
+  background:var(--accent-color);
+}
 .social_links {
   display: flex;
   margin-left: 70px;
 }
 .social__list{
-  display:flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.social-list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 10px;
 }
 
-.social-list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .social-links-title {
   font-family: var(--main-font)
   font-weight: 700;
@@ -442,6 +459,7 @@ color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 /* ===============end footer===============*/
@@ -455,8 +473,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .button-list {
   display: flex;
-  margin-bottom: 34px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
   height: 38px;
   justify-content: center;
 }
@@ -483,6 +500,8 @@ letter-spacing: 0.03em;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .portfolio-list-item {
   width: 370px;
@@ -526,5 +545,13 @@ color: #757575;
 .footer-logo-studio {
 color: #FFFFFF;
 }
+.portfolio-list-link {
+  display: block;
+}
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* ===============end portfolio page ===============*/
 
