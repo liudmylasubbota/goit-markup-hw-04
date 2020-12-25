@@ -84,9 +84,7 @@ color: #000000;
   color: #212121;
 }
 .link:hover,
-.link:focus,
-.modal-btn:hover,
-.modal-btn:focus {
+.link:focus {
   color: var(--accent-color)
 }
 .navigation-list .link.is-current {
@@ -95,6 +93,8 @@ color: #000000;
 .contact-header-tel,
 .contact-header-mail {
   color: #757575;
+  display: flex;
+  align-items: center;
 }
 .navigation {
   display: flex;
@@ -105,6 +105,11 @@ color: #000000;
 }
 .contact-list {
   display: flex;
+}
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-header-tel:hover,
 .contact-header-tel:focus,
@@ -132,6 +137,7 @@ fill: var(--accent-color);
 .header .container {
 display: flex;
 align-items: center;
+justify-content: center;
 padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid #ECECEC;
@@ -318,7 +324,9 @@ margin-bottom: 50px;
   align-items: center;
   justify-content: center;
 }
-
+.social-list-item:not(:last-child){
+  margin-right: 10px;
+}
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -344,15 +352,16 @@ margin-bottom: 50px;
 }
 /* =============== end team ===============*/
 /* =============== our client ===============*/
-
 .our-customer {
   background:#FFFFFF;
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
 .customer-list {
   display: flex;
+}
+.customer-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .our-customer-title {
 font-family: var(--main-font)
@@ -365,29 +374,28 @@ letter-spacing: 0.03em;
 color: #212121;
 margin-bottom: 50px;
 }
-.customer-list-item {
-width: 170px;
-height: 90px;
-border: 1px solid #AFB1B8;
-display: flex;
-justify-content: center;
-align-items: center;
+.customer-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #FFFFFF;
 }
-.customer-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.customer-list-icon {
-  fill: #AFB1B8;
-}
-.customer-list-item:hover,
-.customer-list-item:focus {
-border: 1px solid var(--accent-color);
-} 
-
 
 .customer-list-link:hover .customer-list-icon,
 .customer-list-link:focus .customer-list-icon {
   fill: var(--accent-color);
+}
+.customer-list-link:hover,
+.customer-list-link:focus {
+border-color: var(--accent-color);
+}
+.customer-list-icon {
+  fill: #AFB1B8;;
 }
 
 /* =============== our client end ===============*/
@@ -396,10 +404,12 @@ border: 1px solid var(--accent-color);
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer .container{
   display: flex;
+  align-items: baseline;
 }
 .contact {
   margin-top: 20px;
@@ -459,9 +469,9 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .social-links-title {
-  font-family: var(--main-font)
-  font-weight: 700;
+  font-family: var(--main-font);
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -475,7 +485,8 @@ color: rgba(255, 255, 255, 0.6);
 .filtr-btn:hover,
 .filtr-btn:focus {
   background: var(--accent-color);
-  color: #FFFFFF
+  color: #FFFFFF;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -524,13 +535,10 @@ letter-spacing: 0.03em;
 .portfolio-list-item:nth-last-child(-n + 3n) {
   margin-bottom: 0;
 }
-
-.portfolio-list-item {
-  background: #FFFFFF;
-  border: 1px solid #eeeeee;
-}
 .portfolio-list-wrapper {
   padding: 20px 24px;
+  background: #FFFFFF;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-title {
